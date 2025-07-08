@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './pages/homepage';
+import App from './pages/Homepage/homepage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

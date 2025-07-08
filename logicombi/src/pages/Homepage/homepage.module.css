@@ -1,0 +1,33 @@
+.ContainerTitulos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 24px 32px;
+    border-bottom: 2px solid #cccccca6;
+}
+
+.TituloGeral {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.ContainerConteudo {
+    border: 1px solid #cccccccc;
+}
+
+
+.TituloGrafico {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 24px 32px;
+}
+
+.Logo {
+    height: 35px;
+    margin-left: 24px;
+}

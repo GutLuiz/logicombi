@@ -1,53 +1,98 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #0f172a;
-  color: white;
-  padding: 1rem 2rem;
-  position: relative;
-}
+@import "../../global/global.css";
 
-.logo {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.nav {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.menuIcon {
-  display: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-/* Responsivo para telas pequenas */
-@media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    position: absolute;
-    top: 64px;
-    right: 0;
-    background-color: #0f172a;
-    width: 200px;
-    display: none;
-    padding: 1rem;
-  }
-
-  .nav.open {
+.bottomNav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background: var(--Preto);
     display: flex;
-  }
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0 12px 0;
+    z-index: 100;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
 
-  .menuIcon {
-    display: block;
-  }
+.navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--Branco);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.navItem svg {
+    margin-bottom: 2px;
+    font-size: 1.5rem;
+}
+
+.active {
+    color: var(--Lar-escuro);
+}
+
+@media (min-width: 1000px) {
+    .bottomNav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: unset;
+        width: 180px;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0px;
+        padding: 200px 0 32px 0;
+    }
+
+    .navItem {
+        flex-direction: column;
+        margin: 16px 0;
+        font-size: 1rem;
+    }
+
+    .navItem svg {
+        margin-bottom: 5px;
+        margin-right: 0;
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1800px) {
+    .bottomNav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: unset;
+        width: 280px;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0px;
+        padding: 200px 0 32px 0;
+    }
+
+    .navItem {
+        flex-direction: column;
+        margin: 16px 0;
+        font-size: 1.5rem;
+    }
+
+    .navItem svg {
+        margin-bottom: 2px;
+        margin-right: 0;
+    }
 }
