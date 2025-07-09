@@ -1,9 +1,10 @@
 @import "../../global/global.css";
 
-.bottomNav {
+.butaonav {
     position: fixed;
     bottom: 0;
-    left: 0;
+    right: 0;
+    /* Mudança de left para right */
     width: 100vw;
     background: var(--Preto);
     display: flex;
@@ -15,7 +16,7 @@
     border-top-right-radius: 18px;
 }
 
-.navItem {
+.itens {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,22 +26,22 @@
     transition: color 0.2s;
 }
 
-.navItem svg {
+.itens svg {
     margin-bottom: 2px;
     font-size: 1.5rem;
 }
 
-.active {
+.ativo {
     color: var(--Lar-escuro);
 }
 
 @media (min-width: 1000px) {
-    .bottomNav {
+    .butaonav {
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
+        /* Mudança de left para right */
         bottom: 0;
-        right: unset;
         width: 180px;
         height: 100vh;
         flex-direction: column;
@@ -50,16 +51,16 @@
         border-top-right-radius: 0px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0px;
-        padding: 200px 0 32px 0;
+        padding: 150px 0 32px 0;
     }
 
-    .navItem {
+    .itens {
         flex-direction: column;
         margin: 16px 0;
         font-size: 1rem;
     }
 
-    .navItem svg {
+    .itens svg {
         margin-bottom: 5px;
         margin-right: 0;
         font-size: 1.8rem;
@@ -67,12 +68,12 @@
 }
 
 @media (min-width: 1800px) {
-    .bottomNav {
+    .butaonav {
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
+        /* Mudança de left para right */
         bottom: 0;
-        right: unset;
         width: 280px;
         height: 100vh;
         flex-direction: column;
@@ -85,13 +86,13 @@
         padding: 200px 0 32px 0;
     }
 
-    .navItem {
+    .itens {
         flex-direction: column;
         margin: 16px 0;
         font-size: 1.5rem;
     }
 
-    .navItem svg {
+    .itens svg {
         margin-bottom: 2px;
         margin-right: 0;
     }

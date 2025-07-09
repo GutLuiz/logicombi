@@ -31,3 +31,17 @@
     height: 35px;
     margin-left: 24px;
 }
+
+.layout {
+    display: block;
+}
+
+@media (min-width: 1000px) {
+    .ContainerTitulos {
+        width: 85vw;
+    }
+
+    .Logo {
+        height: 45px; 
+    }
+}
