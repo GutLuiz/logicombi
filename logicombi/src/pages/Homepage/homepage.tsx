@@ -39,7 +39,7 @@ function App() {
           <h1 className={style.TituloGeral}>Visão Geral</h1>
           <img src={logo} alt="" className={style.Logo} />
         </div>
-        {/* <section>
+        <section className={style.teste}>
           <ChartContainer title="Clientes Cadastrados:">
             <ResponsiveContainer>
               <BarChart data={data}>
@@ -51,7 +51,19 @@ function App() {
               </BarChart>
             </ResponsiveContainer>
           </ChartContainer>
+          <ChartContainer title="Pedidos Feitos:">
+            <ResponsiveContainer>
+              <LineChart data={data}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="name" />
+                <YAxis />
+                <Tooltip />
+                <Line type="monotone" dataKey="uv" stroke="#cc5200ec" strokeWidth={3} />
+              </LineChart>
+            </ResponsiveContainer>
+          </ChartContainer>
         </section>
+        {/*
         <section>
           <ChartContainer title="Pedidos Feitos:">
             <ResponsiveContainer>

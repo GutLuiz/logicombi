@@ -1,5 +1,6 @@
 @import "../../global/global.css";
-.ContainerConteudo {
+
+.containerconteudo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -9,7 +10,13 @@
   margin-bottom: 24px;
 }
 
-.TituloGrafico {
+.grafico {
+  width: 90vw;
+  height: 30vh;
+  padding: 24px;
+}
+
+.titulografico {
   margin: 0;
   font-size: 1.2rem;
   font-weight: bold;
@@ -17,7 +24,7 @@
 }
 
 @media (min-width: 1000px) {
-  .ContainerConteudo {
+  .containerconteudo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,5 +32,32 @@
     padding: 24px 32px;
     margin-bottom: 24px;
     max-width: 85vw;
+  }
+
+  .titulografico {
+    font-size: 1.4rem;
+  }
+
+  .grafico {
+    width: 80vw;
+    height: 25vh;
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .containerconteudo {
+    max-width: 50vw;
+    border: 1px solid var(--Cinza);
+  }
+
+  .grafico {
+    width: 39vw;
+    height: 25vh;
+    padding: 24px;
+  }
+
+  .titulografico {
+    font-size: 1.8rem;
   }
 }
