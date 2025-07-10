@@ -1,6 +1,13 @@
 import React from "react";
 import styles from "./header.module.css";
-import { MdHome, MdPerson, MdBusiness, MdAttachMoney, MdMoreHoriz } from "react-icons/md";
+import {
+  MdHome,
+  MdPerson,
+  MdBusiness,
+  MdAttachMoney,
+  MdMoreHoriz,
+  MdAssignmentInd,
+} from "react-icons/md";
 
 const Header: React.FC = () => (
   <nav className={styles.butaonav}>
@@ -20,11 +27,11 @@ const Header: React.FC = () => (
       <MdAttachMoney />
       <span>Vendas</span>
     </div>
-    {/* <div className={styles.navItem}>
+    <div className={styles.itens}>
       <MdMoreHoriz />
       <span>Mais</span>
-    </div> */}
+    </div>
   </nav>
 );
 
-export default Header; 
+export default Header;

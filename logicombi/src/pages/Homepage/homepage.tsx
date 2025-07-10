@@ -1,31 +1,45 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../components/Header/header";
-import style from "./homepage.module.css"
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line, PieChart, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'recharts';
+import style from "./homepage.module.css";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  LineChart,
+  Line,
+  PieChart,
+  RadarChart,
+  Radar,
+  PolarGrid,
+  PolarAngleAxis,
+  PolarRadiusAxis,
+} from "recharts";
 import ChartContainer from "../../components/ChartContainer/ChartContainer";
 
-import logo from "../../assets/logos/logoPreto.png"
-
+import logo from "../../assets/logos/logoPreto.png";
 
 const data = [
-  { name: 'Jan', uv: 400 },
-  { name: 'Feb', uv: 300 },
-  { name: 'Mar', uv: 200 },
-  { name: 'Apr', uv: 278 },
-  { name: 'May', uv: 189 },
-
+  { name: "Jan", uv: 400 },
+  { name: "Feb", uv: 300 },
+  { name: "Mar", uv: 200 },
+  { name: "Apr", uv: 278 },
+  { name: "May", uv: 189 },
 ];
 
 function App() {
   return (
     <div className={style.layout}>
-        <Header />
+      <Header />
       <main className={style.principal}>
         <div className={style.ContainerTitulos}>
           <h1 className={style.TituloGeral}>Visão Geral</h1>
           <img src={logo} alt="" className={style.Logo} />
         </div>
-        <section>
+        {/* <section>
           <ChartContainer title="Clientes Cadastrados:">
             <ResponsiveContainer>
               <BarChart data={data}>
@@ -63,7 +77,7 @@ function App() {
               </RadarChart>
             </ResponsiveContainer>
           </ChartContainer>
-        </section>
+        </section> */}
       </main>
     </div>
   );
