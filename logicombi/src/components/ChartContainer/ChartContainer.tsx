@@ -7,7 +7,6 @@ interface ChartContainerProps {
 }
 
 const ChartContainer: React.FC<ChartContainerProps> = ({ title, children }) => (
-
     <section className={style.containerconteudo}>
         <h1 className={style.titulografico}>{title}</h1>
         <div className={style.grafico}>

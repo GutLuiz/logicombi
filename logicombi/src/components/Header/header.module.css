@@ -87,35 +87,34 @@
     top: 0;
     right: 0;
     bottom: 0;
-    width: 280px;
+    width: 250px;
     height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start; /* Alinha tudo à esquerda */
+    padding-left: 20px;
   }
 
   .itens {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 40px 0;
-    font-size: 1.6rem;
-    gap: 15px;
+    gap: 12px;
+    width: 100%;
+    padding: 8px 16px;
+    color: var(--Branco);
+    cursor: pointer;
   }
 
   .itens svg {
-    display: block;
-    margin: 0;
-    font-size: 2rem;
-    min-width: 2rem;
-    min-height: 2rem;
-    align-self: center;
+    flex-shrink: 0;
+    font-size: 1.8rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .itens span {
-    display: block;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    align-self: center;
+    font-size: 1.2rem;
+    white-space: nowrap;
   }
 }
